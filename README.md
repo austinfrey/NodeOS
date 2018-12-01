@@ -61,6 +61,7 @@ adjust better to each target platform, but the general structure is:
 - [*initramfs*](https://github.com/NodeOS/nodeos-initramfs) Initram environment to mount the users partition & boot the system
 - [*usersfs*](https://github.com/NodeOS/nodeos-userfs) multi-user environment with the same behaviour of traditional OSes. Primarily for demo purposes. Users are encouraged to make their own `userfs` bundles for their applications.
 
+[![NodeOS Arcihtecture](https://raw.githubusercontent.com/NodeOS/NodeOS/master/doc/NodeOS%20Layer%203%20-%20usersfs.png)]
 
 ### Booting process
 
