@@ -52,12 +52,15 @@ platforms:
 - **PaaS providers** like Heroku or Joyent's Manta
 - **container providers** like Docker & Vagga
 
+## Architecture
+
 Core development is being done in layers. There could be some differences to
 adjust better to each target platform, but the general structure is:
 
-- *barebones* custom Linux kernel with an initramfs that boots to a Node.js REPL
-- *initramfs* Initram environment to mount the users partition & boot the system
-- *usersfs*   multi-user environment with the same behaviour of traditional OSes
+- [*barebones*](https://github.com/NodeOS/nodeos-barebones) custom Linux kernel with an initramfs that boots to a Node.js REPL
+- [*initramfs*](https://github.com/NodeOS/nodeos-initramfs) Initram environment to mount the users partition & boot the system
+- [*usersfs*](https://github.com/NodeOS/nodeos-userfs) multi-user environment with the same behaviour of traditional OSes. Primarily for demo purposes. Users are encouraged to make their own `userfs` bundles for their applications.
+
 
 ### Booting process
 
